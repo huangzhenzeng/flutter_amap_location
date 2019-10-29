@@ -16,9 +16,9 @@ static NSDictionary* DesiredAccuracy = @{@"kCLLocationAccuracyBest":@(kCLLocatio
 
 @interface AmapLocationPlugin()<AMapLocationManagerDelegate>
 
-@property (nonatomic, retain)  AMapLocationManager *locationManager;
+@property (nonatomic, strong)  AMapLocationManager *locationManager;
 @property (nonatomic, copy) AMapLocatingCompletionBlock completionBlock;
-@property (nonatomic, weak) FlutterMethodChannel* channel;
+@property (nonatomic, strong) FlutterMethodChannel* channel;
 
 @end
 
